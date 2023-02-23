@@ -1,0 +1,44 @@
+<div class="flex">
+	<div class="_1">1</div>
+	<div class="_2">2</div>
+	<div class="_3">3</div>
+	<div class="_4">4</div>
+
+</div>
+<style type="text/css">
+	.flex {
+		display: flex;
+		justify-content: space-between;
+					    flex-wrap: wrap;
+
+	}
+	._1, ._2, ._3, ._4, ._5 {
+		background: blue;
+		width: 20%;
+		color: #fff;
+		font-size: 30px;
+
+	}
+	@media(max-width: 900px) {
+		._2 {
+			background: red;
+		}
+	}
+	@media(min-width: 900px) and (max-width: 1100px) {
+		._2 {
+			background: green;
+		}
+	}
+	@media(max-width: 500px) {
+		.flex {
+		}
+		.flex div {
+			width: 50%;
+		}
+	}
+	/*@media(min-width: 1100px) {
+		._2 {
+			background: brown;
+		}
+	}*/	
+</style>

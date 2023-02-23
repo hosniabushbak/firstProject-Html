@@ -15,7 +15,7 @@ ul {
 }
 header {
 	height: 100vh;
-    background-image: url('../img/back.jpg');
+    background-image: linear-gradient(rgb(0 0 0 / 26%),rgba(0,0,0,0.7)), url(../img/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
