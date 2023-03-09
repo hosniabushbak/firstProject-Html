@@ -1,3 +1,6 @@
+:root {
+	--mainColor: #ff4d29;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -20,18 +23,66 @@ a {
 .justify-between {
 	justify-content: space-between;
 }
+.justify-center {
+	justify-content: center;
+}
+.vertical-align-center {
+	align-items: center;
+}
 .display-inline {
 	display: inline-block;
 }
 .padding-5 {
 	padding: 0 5px;
 }
+.pt-70 {
+	padding-top: 70px;
+}
+.p-30 {
+	padding: 0 30px;
+}
+.d-none {
+	display: none;
+}
+.btn-primary {
+	padding: 12px 30px;
+    border: 0;
+    background-color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.btn-primary:hover {
+	background-color: #c63214;
+	border: 1px solid #c63214;
+	cursor: pointer;
+	transition: 1s;
+
+}
+.btn-secondary {
+	padding: 12px 30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.btn-secondary:hover {
+	background-color: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	color: #000;
+	transition: 1s;
+}
 /* End global attributes */
 /* ***************************************************************  */
 /* Nav */
 .topNav {
 	padding: 7px 0;
-	background-color: #ff4d29;
+	background-color: var(--mainColor);
 	color: #fff;
 }
 .socialMedia div {
@@ -50,4 +101,79 @@ a {
 	color: #ff4d29;
 	transition: 1s;
 }
+.bottomNav  {
+	padding: 9.5px 0;
+}
+.bottomNav .logo img {
+	height: 51px;
+}
+.bottomNav .menu ul li {
+	display: inline-block;
+	padding: 0 4px;
+}
+.bottomNav .menu ul li a {
+	color: #000;
+	font-weight: 500;
+}
+.bottomNav .menu button {
+	padding: 12px 30px;
+	border: 0;
+	background-color: var(--mainColor);
+	color: #fff;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 15px;
+}
+.menu-mobile-icon {
+	padding: 7px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.menu-mobile-icon i {
+	font-size: 27px;
+}
 /* End nav */
+/* header */
+header {
+	/*height: calc(100vh - 112.4px);*/
+	height: 633.2px;
+	background-size: cover;
+	background-position: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/banner1.jpg');
+}
+.header-container {
+	text-align: center;
+}
+.header-container p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+header h1 {
+	font-size: 70px;
+	color: #fff;
+}
+header .headerBtn button {
+	margin: 30px 10px;
+}
+/* end header */
+/*service*/
+.servicesContainer {
+	padding: 80px 200px;
+}
+.service {
+	margin-bottom: 30px;
+}
+.service-title {
+	padding-bottom: 16px;
+}
+.service-mainImage img {
+	height: 100%;
+	width: 100%;
+}
+.service-p p {
+	line-height: 1.5;
+    color: #555;
+}
+/*end service*/
