@@ -15,6 +15,15 @@
 	.service-justify {
 		justify-content: center;
 	}
+	.statistics-container {
+		padding: 0 127px !important;
+	}
+	
+}
+@media (max-width: 900px) {
+	.grid-4 {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
 }
 @media (max-width: 830px) {
 	.menu {
@@ -58,5 +67,14 @@
 	}
 	.service-text {
 		padding-top: 10px;
+	}
+	.grid-4 {
+		grid-template-columns: 1fr !important;
+	}
+	.statistic {
+		margin: 30px 0;
+	}
+	#statistics {
+		padding: 0 !important;
 	}
 }

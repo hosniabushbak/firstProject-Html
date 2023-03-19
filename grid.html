@@ -1,0 +1,26 @@
+<div class="parent">
+	<div class="_1">1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+</div>
+<style type="text/css">
+	.parent {
+		display: grid;
+		/*grid-template-columns: repeat(4, 1fr);*/
+		grid-template-columns: 10% auto repeat(2, 1fr);
+		/*1fr 1fr 1fr 1fr*/
+		/*grid-template-rows: 200px 200px;*/
+	}
+	.parent div {
+		height: 50px;
+		width: 100%;
+		background: red;
+		margin: 0 auto;
+	}
+	._1 {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
