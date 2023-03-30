@@ -1,0 +1,19 @@
+/* header attributes  */
+header {
+	background-image: url("file:///C:/Users/al/Desktop/projects/simple%20html%20project-university/img/pexels-startup-stock-photos-7369.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*height: 100vh;*/
+}
+.navbar-brand img {
+	height: 50px;
+}
+.mainBtn {
+	    padding: 10px 40px !important;
+	    transition: 1s !important;
+}
+.section2Image {
+	height: 100px;
+	width: 100px;
+}

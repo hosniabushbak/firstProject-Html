@@ -1,0 +1,63 @@
+<div class="parent">
+	<div class="child">
+		
+	</div>
+</div>
+<style type="text/css">
+	.child {
+		text-align: center;
+		margin: 50 auto;
+		height: 123px;
+		width: 123px;
+		background: red;
+		border-radius: 50%;
+		border: 5px solid blue;
+		border-left-color: transparent;
+		/*transition: 3s;*/
+		    /*transform: scaleX(2);*/
+		    /*transform: scaleY(1.5);*/
+		    /*transform: scale(3);*/
+		    /*transform: rotate(360deg);*/
+		    /*transform: rotate(1turn);*/
+		    /*transform: rotate(6rad);*/
+		    /*transform: skew(10deg);*/
+		    animation-name: colorChanger;
+		    animation-duration: 3s;
+		    animation-iteration-count: infinite;
+		    animation-timing-function: linear;
+		    animation-direction: reverse;
+		    animation-delay: 2s;
+		    animation-direction: alternate;
+	}
+
+	.child:hover {
+		    animation-play-state: paused;
+	}
+
+	@keyframes colorChanger {
+		0% {
+			background:  blue;
+		}
+
+		50% {
+			background: yellow;
+		}
+
+		100% {
+			background: green;
+		}
+	}
+
+	@keyframes colorChanger {
+		0% {
+			transform: rotate(0deg);
+			background:  blue;
+		}
+
+		100% {
+			transform: rotate(360deg);
+			background: green;
+		}
+	}
+
+</style>
